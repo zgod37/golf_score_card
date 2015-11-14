@@ -1,0 +1,55 @@
+<!-- Disc Golf Score Card v0.2.6 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Disc Golf Score Card</title>
+		<link type="text/css" rel="stylesheet" href="discstyle.css" />
+	</head>
+	<body>
+		<h1>Disc Golf Score Card</h1>
+		<form id="discForm">
+			<p>Course Name</p>
+			<input class="entryTextbox" value="Enter Course Name" name="courseName" maxlength="30"/>
+			<p>Number of Holes</p>
+			<input class="entryTextbox" value="18" name="numHoles" maxlength="2"/>
+			<p>Number of players</p>
+			<select class="entryTextbox" name="numPlayers">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+			</select>
+			<p>Enter player names</p>
+			<input class="entryTextbox inputName" name="p1Name" value="Player 1" maxlength="30" />
+			<input class="entryTextbox inputName hidden" name="p2Name" value="Player 2" maxlength="30"/>
+			<input class="entryTextbox inputName hidden" name="p3Name" value="Player 3" maxlength="30"/>
+			<input class="entryTextbox inputName hidden" name="p4Name" value="Player 4" maxlength="30"/>
+			<input class="entryTextbox inputName hidden" name="p5Name" value="Player 5" maxlength="30"/>
+			<input class="entryTextbox inputName hidden" name="p6Name" value="Player 6" maxlength="30"/>
+			<input type="button" class="entryBtn" id="startRound" value="Start Round" />
+		</form>
+		<form id="scoreForm" class="hidden">
+			<input type="button" class= "xBtn" name="closeForm" value="X" />
+			<span id="scoreEntryLbl">Enter Score</span>
+			<input class="entryTextbox scoreTextbox" name="scoreEntryBox" maxlength="2" value="3" />
+			<input type="button" name="scoreEntryBtn" value="Enter Score" />
+			<div id="quickPickDiv">
+				<span id="quickPickLbl">Quick Picks</span>
+				<input type="button" class="pickScoreBtn" id="birdieBtn" value="Birdie" />
+				<input type="button" class="pickScoreBtn" id="parBtn" value="Par" />
+				<input type="button" class="pickScoreBtn" id="bogeyBtn" value="Bogey" />
+			</div>
+		</form>
+		<!-- <h2 id="sortTest">Sort Players</h3> -->
+		<div id="chgParDiv" class="hidden">
+			<input type="button" class="xBtn" id="parCloseBtn" value="X" />
+			<span id="chgParLbl">Select New Par</span>
+			<input class="chgParBtn" type="button" id="chgParBtn3" value="3"/>
+			<input class="chgParBtn" type="button" id="chgParBtn4" value="4"/>
+			<input class="chgParBtn" type="button" id="chgParBtn5" value="5"/>
+		</div>
+		<script type="text/javascript" src="discscript.js"></script>
+	</body>
+</html>

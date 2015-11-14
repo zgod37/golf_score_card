@@ -1,0 +1,257 @@
+body {
+	background-color: #8D8D8D;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto","Lucida Sans Unicode","Lucida Grande",Arial,Helvetica,sans-serif;
+}
+h1 {
+	text-align: center;
+	font-family: Tahoma;
+}
+/* FORM STUFF */
+#discForm {
+	position: fixed;
+	left: 37%;
+	text-align: center;
+	border: 1px solid black;
+	font-size: 20px;
+	width: 25%;
+	background-color: #eee;
+}
+p {
+	text-align: center;
+	color: navy;
+}
+#scoreForm {
+	position: fixed;
+	z-index: 10;
+	font-size: 20px;
+	text-align: center;
+	width: 15%;
+	background-color: #33DD33;
+}
+.entryTextbox {
+	text-align: center;
+	position: relative;
+	top: -10px;
+	bottom: 10px;
+	height: 30px;
+	width: 65%;
+}
+.scoreTextbox {
+	top: 0;
+}
+.hidden {
+	display: none;
+}
+.entryBtn {
+	height: 75px;
+	width: 60%;
+	color: #FFFFFF;
+	background-color: #47D147;
+	font-size: 30px;
+	text-align: center;
+	display: block;
+	position: relative;
+	left: 20%;
+	margin-bottom: 10px;
+}
+#quickPickDiv {
+	border: 2px solid navy;
+	text-align: center;
+	position: relative;
+	height: 80px;
+	width: 60%;
+	left: 20%;
+}
+#quickPickLbl {
+	position: relative;
+	display: block;
+	font-size: 12px;
+}
+.pickScoreBtn {
+	display: block;
+	position: relative;
+	width: 60%;
+	left: 20%;
+	border: none;
+}
+#birdieBtn {
+	background-color: #33FF22;
+}
+#parBtn {
+	background-color: #FF9933;
+}
+#bogeyBtn {
+	background-color: #FF8181;
+}
+/* #holeInfoDiv {
+	position: relative;
+	height: 25%;
+	width: 70%;
+	left: 15%;
+	margin-top: 10%;
+} */
+#chgParDiv {
+	z-index: 11;
+	position: fixed;
+	top: 28%;
+	height: 100px;
+	width: 13%;
+	background-color: #47D147;
+	font-size: 20px;
+	text-align: center;
+}
+.chgParBtn {
+	border: none;
+	display: inline-block;
+	height: 30px;
+	width: 20%;
+	background-color: #007A00;
+	box-shadow: 2px 2px;
+	font-size: 18px;
+	font-weight: bold;
+}
+#chgParLbl {
+	margin-top: 5%;
+	position: relative;
+	display: block;
+	padding: 4px;
+	font-weight: bold;
+}
+.xBtn {
+	border: 2px solid #aa0000;
+	background-color: #EE3100;
+	font-weight: bold;
+	font-size: 10px;
+	display: inline-block;
+	position: absolute;
+	right: 0%;
+	height: 20px;
+	width: 11%;
+}
+/* SCORECARD STUFF */
+div {
+ 	border: 1px solid #000000;
+	/*border-radius: 5px; */
+}
+#toprow {
+	height: 40px;
+	background-color: #cccccc;
+	text-align: center;
+	position: relative;
+	width: 95%;
+	left: 2.5%;
+	right: 2.5%;
+}
+h2 {
+	font-family: Verdana;
+	position: absolute;
+	font-size: 15px;
+	padding: 5px;
+}
+.leftcol {
+	position: relative;
+    background-color: #ffff66;
+	float: left;
+	left: 2.5%;
+	display: inline-block;
+	height: 40px;
+	width: 35%;
+}
+.rightcol {
+	float: right;
+	right: 2.5%;
+	display: inline-block;
+	background-color: #B8B894;
+	position: relative;
+	height: 40px;
+	width: 60%;
+	line-height: 40px;
+}
+.holeCell {
+	display: inline-block;
+	border: none;
+	border-radius: 0;
+	text-align: center;
+	font-family: Verdana;
+	font-size: 25px;
+}
+.pname {
+	float: left;
+	position: relative;
+	background-color: #AAC1FF;
+}
+.scoreRow {
+	background-color: #4791FF;
+}
+.rawScore {
+	border: none;
+	border-radius: 0;
+	height: 75%;
+	width: 6.5%;
+	background-color: #FF6262;
+	position: absolute;
+	display: inline-block;
+	z-index: 2;
+	right: 7.5%;
+	bottom: 0;
+	text-align: center;
+	font-family: Verdana;
+	font-style: bold;
+	font-size: 20px;
+	padding-top: 4px;
+}
+.diff {
+	border: none;
+	border-radius: 0;
+	height: 75%;
+	width: 6.5%;
+	right: 1%;
+	bottom: 0;
+	z-index: 2;
+	position: absolute;
+	display: inline-block;
+	background-color: #fff;
+	text-align: center;
+	font-family: Verdana;
+	font-style: bold;
+	font-size: 20px;
+	padding-top: 4px;
+}
+.highlightHole {
+	background-color: #eee;
+	color: #993399;
+	font-weight: bold;
+ 	border: 2px solid maroon;
+	border-radius: 2px;
+}
+.highlight {
+	background-color: #eee;
+}
+.eagle {
+	background-color: gold;
+}
+.birdie {
+	background-color: #FFB56C;
+}
+.par {
+	background-color: #4791FF;
+}
+.bogey {
+	background-color: red;
+}
+.doublebogey {
+	background-color: maroon;
+}
+.ace {
+	font-weight: bold;
+	color: orange;
+	background-color: yellow;
+}
+.under {
+	background-color: #008F00;
+}
+.over {
+	background-color: #FF1122;
+}
